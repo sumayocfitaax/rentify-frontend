@@ -49,7 +49,7 @@ function FeaturedProperties() {
               className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition"
             >
               <img
-                src={`http://localhost:3000/images/${property.images}`}
+                src={`https://rentify-5zqa.onrender.com/images/${property.images}`}
                 alt={property.title}
                 className="h-60 w-full object-cover"
               />

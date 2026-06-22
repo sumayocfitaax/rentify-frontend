@@ -102,7 +102,7 @@ function Dashboard() {
             >
               {/* IMAGE */}
               <img
-                src={`http://localhost:3000/images/${p.images}`}
+                src={`https://rentify-5zqa.onrender.com/images/${p.images}`}
                 alt={p.title}
                 className="h-48 w-full object-cover"
               />

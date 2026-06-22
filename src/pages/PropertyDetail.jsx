@@ -88,7 +88,7 @@ console.log("PARAM ID:", id);
           {/* LEFT COLUMN: IMAGES (Takes 7/12 width on large screens) */}
           <div className="lg:col-span-7 bg-stone-900 min-h-87.5 lg:min-h-137.5 relative flex items-center justify-center overflow-hidden">
             <img
-              src={`http://localhost:3000/images/${property.images}`}
+              src={`https://rentify-5zqa.onrender.com/images/${property.images}`}
               alt={property.title}
               className="w-full h-full object-cover absolute inset-0"
             />

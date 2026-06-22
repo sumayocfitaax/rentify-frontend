@@ -76,7 +76,7 @@ function PropertiesView() {
             className="bg-white rounded-2xl shadow-md overflow-hidden"
           >
             <img
-              src={`http://localhost:3000/images/${property.images}`}
+              src={`https://rentify-5zqa.onrender.com/images/${property.images}`}
               alt={property.title}
               className="w-full h-56 object-cover"
             />
