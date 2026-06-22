@@ -11,7 +11,7 @@ function PropertiesView() {
     const fetchProperties = async () => {
     try {
       const res = await axios.get(
-        `${backendURL}/properties/get`
+        `${backendURL}/api/properties/get`
       );
 
       if (res.data.success) {

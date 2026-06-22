@@ -24,7 +24,7 @@ console.log("PARAM ID:", id);
     const fetchPropertyDetails = async () => {
       try {
 
-        const response = await axios.get(`${backendURL}/property/get/${id}`);
+        const response = await axios.get(`${backendURL}/api/property/get/${id}`);
         if (response.data) {
           setProperty(response.data.data || response.data);
         }

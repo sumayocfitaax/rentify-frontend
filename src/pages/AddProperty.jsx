@@ -52,7 +52,7 @@ function AddProperty() {
       formData.append("images", image); 
 
       const res = await axios.post(
-        `${backendURL}/property/add`,
+        `${backendURL}/api/property/add`,
         formData,
         {
           headers: {

@@ -18,7 +18,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(`${backendURL}/user/login`, { email, password });
+      const res = await axios.post(`${backendURL}/api/user/login`, { email, password });
 
       if (res.data.success) {
         // ✅ Call global context login. It saves to storage AND tells the navbar to re-render!

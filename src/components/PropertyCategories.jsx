@@ -14,7 +14,7 @@ function PropertyCategories() {
   useEffect(() => {
     const getStats = async () => {
       const res = await axios.get(
-        `${backendURL}/property/stats`
+        `${backendURL}/api/property/stats`
       );
 
       setStats(res.data.stats);

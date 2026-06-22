@@ -37,8 +37,8 @@ function DashboardView() {
         setAdminName(localStorage.getItem("adminName") || "System Administrator");
 
         // Fetching structural info to populate dashboard analytics
-        const propsRes = await axios.get(`${backendURL}/properties/get`, { headers });
-        const usersRes = await axios.get(`${backendURL}/user/getAll`, { headers }).catch(() => null);
+        const propsRes = await axios.get(`${backendURL}/api/properties/get`, { headers });
+        const usersRes = await axios.get(`${backendURL}/api/user/getAll`, { headers }).catch(() => null);
         console.log(usersRes.data);
         if (propsRes?.data?.success) {
           const props = propsRes.data.data || [];

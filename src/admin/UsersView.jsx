@@ -14,7 +14,7 @@ function UsersView() {
   const fetchUsers = async () => {
     try {
       // 🚨 Using your exact backend router configuration path
-      const res = await axios.get(`${backendURL}/user/getAll`);
+      const res = await axios.get(`${backendURL}/api/user/getAll`);
       if (res.data.success) {
         setUsers(res.data.users || []);
       }
@@ -31,7 +31,7 @@ function UsersView() {
     try {
       const token = localStorage.getItem("token");
       // Assuming a standard match on singular user deletion architecture routes
-      const res = await axios.delete(`${backendURL}/user/delete/${id}`, {
+      const res = await axios.delete(`${backendURL}/api/user/delete/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

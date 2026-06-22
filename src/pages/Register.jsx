@@ -15,7 +15,7 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post(`${backendURL}/user/register`, {name, email, password})
+      const response = await axios.post(`${backendURL}/api/user/register`, {name, email, password})
 
       if(response.data.success){
         localStorage.setItem('token', response.data.success)

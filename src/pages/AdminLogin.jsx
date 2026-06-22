@@ -14,7 +14,7 @@ function adminLogin() {
         e.preventDefault()
 
         try {
-            const response = await axios.post(`${backendURL}/admin/login`, {email, password})
+            const response = await axios.post(`${backendURL}/api/admin/login`, {email, password})
             if(response.data.success){
                 localStorage.setItem('adminLogin', response.data.token)
                 navigate('/admin/dashboard')

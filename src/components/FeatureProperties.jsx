@@ -15,7 +15,7 @@ function FeaturedProperties() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const res = await axios.get(`${backendURL}/properties/get`);
+        const res = await axios.get(`${backendURL}/api/properties/get`);
 
         if (res.data.success) {
           setProperties(res.data.data);

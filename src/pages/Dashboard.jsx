@@ -15,7 +15,7 @@ function Dashboard() {
       try {
         const token = localStorage.getItem("token");
 
-        const response = await axios.get(`${backendURL}/property/my`, {
+        const response = await axios.get(`${backendURL}/api/property/my`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -46,7 +46,7 @@ function Dashboard() {
 
       // Hits your backend route: /property/delete/:id
       const response = await axios.delete(
-        `${backendURL}/property/delete/${id}`,
+        `${backendURL}/api/property/delete/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`, // Pass token if backend requires auth for deletes

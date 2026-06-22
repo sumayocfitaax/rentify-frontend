@@ -99,10 +99,10 @@ function Hero() {
     const fetchLiveMetrics = async () => {
       try {
         // 1. Fetch properties (which we know works 100%)
-        const propsRes = await axios.get(`${backendURL}/properties/get`);
+        const propsRes = await axios.get(`${backendURL}/api/properties/get`);
         
         // 2. Try to fetch from a public user route, fail silently if it doesn't exist
-        const usersRes = await axios.get(`${backendURL}/user/publicCount`).catch(() => null);
+        const usersRes = await axios.get(`${backendURL}/api/user/publicCount`).catch(() => null);
 
         let propertyCount = 0;
         let cityCount = 0;

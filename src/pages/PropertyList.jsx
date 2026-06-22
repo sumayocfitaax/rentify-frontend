@@ -10,7 +10,7 @@ const PropertyList = () => {
   useEffect(() => {
     const getAllProperty = async () => {
       try {
-        const response = await axios.get(`${backendURL}/properties/get`);
+        const response = await axios.get(`${backendURL}/api/properties/get`);
         setData(response.data.data);
       } catch (error) {
         console.log(error);
