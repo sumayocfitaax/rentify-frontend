@@ -34,7 +34,7 @@ function PropertiesView() {
 
     // 🚨 Changed back to matching your backend singular endpoint route path
     const res = await axios.delete(
-      `${backendURL}/property/delete/${id}`,
+      `${backendURL}/api/property/delete/${id}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
