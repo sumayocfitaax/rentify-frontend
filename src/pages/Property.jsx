@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { backendURL } from "../config";
 
 const Property = ({ property }) => {
   console.log(property._id);
@@ -9,7 +8,7 @@ const Property = ({ property }) => {
       {/* Visual Image Header Context */}
       <div className="relative w-full h-56 overflow-hidden bg-stone-100 shrink-0">
         <img
-          src={`{backendURL}/images/${property.images}`}
+          src={`https://rentify-5zqa.onrender.com/images/${property.images}`}
           alt={property.title}
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
         />

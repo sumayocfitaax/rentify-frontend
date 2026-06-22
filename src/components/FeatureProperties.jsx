@@ -87,7 +87,7 @@ function FeaturedProperties() {
                    {property.description}
                 </p>
 
-                <Link to='/propertyDetail'>
+                <Link to={`/propertyDetail/${property._id}`}>
                   <button className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium">
                     View Details
                   </button>
