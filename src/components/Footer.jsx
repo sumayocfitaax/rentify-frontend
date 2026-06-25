@@ -12,7 +12,7 @@ function Footer() {
           
           <div>
             <h2 className="text-2xl font-bold text-white">
-              🏠 RentNest
+              Rentify
             </h2>
             <p className="mt-4 text-sm text-gray-400">
               Find your perfect home easily and securely. We connect tenants with verified property owners.

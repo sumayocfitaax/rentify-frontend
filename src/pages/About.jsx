@@ -27,7 +27,7 @@ function About() {
           
           <div className="lg:col-span-7 space-y-6 lg:pt-6">
             <p className="text-lg md:text-xl text-stone-700 font-medium leading-relaxed">
-              RentNest is a premium property rental platform that bridges the gap 
+              Rentify is a premium property rental platform that bridges the gap 
               between exceptional living spaces and discerning tenants. 
             </p>
             <p className="text-stone-600 leading-relaxed text-base">
